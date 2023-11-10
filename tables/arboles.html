@@ -1,0 +1,484 @@
+ 
+ 
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <base href="../">
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <meta name="description" content="POS - Bootstrap Admin Template">
+		<meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, invoice, html5, responsive, Projects">
+        <meta name="author" content="Dreamguys - Bootstrap Admin Template">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Dreams Pos admin template</title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/ilustracion-diseno-logotipo-arbol-abstracto_43582-134.avif">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+		<link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+		<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+		<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+		<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+		
+	</head>
+	
+	<body>
+		<div id="global-loader" >
+			<div class="whirly-loader"> </div>
+		</div>
+		<div class="main-wrapper">
+			<div class="header">
+				 <div class="header-left active">
+					<a href="index.html" class="logo logo-normal">
+						<img src="images/Logo-arbol-singular-COLOR-letras-revista-300px-.png"  alt="">
+					</a>
+					<a href="index.html" class="logo logo-white">
+						<img src="images/Logo-arbol-singular-COLOR-letras-revista-300px-.png"  alt="">
+					</a>
+					<a href="index.html" class="logo-small">
+						<img src="images/ilustracion-diseno-logotipo-arbol-abstracto_43582-134.avif"  alt="" class="img-fluid" style="width: 500px;">
+					</a>
+					<a id="toggle_btn" href="javascript:void(0);">
+						<i data-feather="chevrons-left" class="feather-16"></i>
+					</a>
+				</div>
+				<a id="mobile_btn" class="mobile_btn" href="#sidebar">
+					<span class="bar-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</a>
+				<ul class="nav user-menu">
+					<li class="row">
+						<h1>RESERVA ARBOLES COLOMBIA</h1>
+					</li>
+				</ul>
+			</div>
+			<div class="sidebar" id="sidebar">
+				<div class="sidebar-inner slimscroll">
+					<div id="sidebar-menu" class="sidebar-menu">
+						<ul>
+                            <li class="submenu-open">
+								<h6 class="submenu-hdr">DashBoard</h6>
+								<ul>
+									<li class="active">
+										<a href="dashboard.html" ><i data-feather="grid"></i><span>DashBoard</span></a>
+									</li>
+								</ul>								
+							</li>
+							<li class="submenu-open">
+								<h6 class="submenu-hdr">Importar Datos</h6>
+								<ul>
+									<li><a href="analizarDatos.html"><i data-feather="minimize-2"></i><span>Importar Datos</span></a></li>
+								</ul>
+							</li>
+                            <li class="submenu-open">
+								<h6 class="submenu-hdr">Exportar Datos</h6>
+								<ul>
+									<li><a href="exportarDatos.html"><i data-feather="shuffle"></i><span>Exportar Datos</span></a></li>
+								</ul>
+							</li>
+							<li class="submenu-open">
+								<h6 class="submenu-hdr">Analizar Datos</h6>
+								<ul>
+									<li><a href="analizarDatos.html"><i data-feather="codepen"></i><span>Analizar Datos</span></a></li>
+								</ul>
+							</li>
+                            <li class="submenu-open">
+								<h6 class="submenu-hdr">Lista Arboles</h6>
+								<ul>
+									<a href="tables/arboles.html" ><i data-feather="grid"></i><span>Lista Arboles</span></a>
+								</ul>								
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="page-wrapper">
+				<div class="content">
+					<div class="row">
+						<div class="col-lg-6 col-sm-6 col-12">
+							<div class="dash-widget">
+								<div class="dash-widgetimg">
+									<span><img src="assets/img/icons/dash1.svg" alt="img"></span>
+								</div>
+								<div class="dash-widgetcontent">
+									<h5 >$<span class="counters" data-count="307144.00">$307,880.00</span></h5>
+									<h6>Total de Dinero Recaudado</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-sm-6 col-12">
+							<div class="dash-widget dash1">
+								<div class="dash-widgetimg">
+									<span><img src="assets/img/icons/dash2.svg" alt="img"></span>
+								</div>
+								<div class="dash-widgetcontent">
+									<h5 >$<span class="counters" data-count="4385.00">$4,385.00</span></h5>
+									<h6>Total Arboles Vendidos</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card mb-0">
+						<div class="card-body">
+							<h4 class="card-title">Tipo de Arboles</h4>
+							<div class="table-responsive dataview">
+		
+
+
+        
+<table class="table table-striped">
+<thead>
+<tr>
+<th></th>
+<th>id_arbol</th>
+<th>Nombre</th>
+<th>Precio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>726</td>
+<td>Laurel</td>
+<td>70074</td>
+</tr>
+<tr>
+<th>1</th>
+<td>2290</td>
+<td>Laurel</td>
+<td>97157</td>
+</tr>
+<tr>
+<th>2</th>
+<td>2369</td>
+<td>Caova</td>
+<td>91468</td>
+</tr>
+<tr>
+<th>3</th>
+<td>445</td>
+<td>Quina</td>
+<td>4326</td>
+</tr>
+<tr>
+<th>4</th>
+<td>2352</td>
+<td>Quina</td>
+<td>65625</td>
+</tr>
+<tr>
+<th>5</th>
+<td>1006</td>
+<td>Caova</td>
+<td>97701</td>
+</tr>
+<tr>
+<th>6</th>
+<td>2397</td>
+<td>Quina</td>
+<td>60217</td>
+</tr>
+<tr>
+<th>7</th>
+<td>2013</td>
+<td>Quina</td>
+<td>22792</td>
+</tr>
+<tr>
+<th>8</th>
+<td>2165</td>
+<td>Caova</td>
+<td>36953</td>
+</tr>
+<tr>
+<th>9</th>
+<td>1527</td>
+<td>Guayaca</td>
+<td>97858</td>
+</tr>
+<tr>
+<th>10</th>
+<td>2481</td>
+<td>Laurel</td>
+<td>69711</td>
+</tr>
+<tr>
+<th>11</th>
+<td>1025</td>
+<td>Ceiba</td>
+<td>32194</td>
+</tr>
+<tr>
+<th>12</th>
+<td>687</td>
+<td>Ceiba</td>
+<td>38237</td>
+</tr>
+<tr>
+<th>13</th>
+<td>269</td>
+<td>Caova</td>
+<td>6085</td>
+</tr>
+<tr>
+<th>14</th>
+<td>2385</td>
+<td>Ceiba</td>
+<td>70349</td>
+</tr>
+<tr>
+<th>15</th>
+<td>1327</td>
+<td>Laurel</td>
+<td>97969</td>
+</tr>
+<tr>
+<th>16</th>
+<td>1276</td>
+<td>Laurel</td>
+<td>21000</td>
+</tr>
+<tr>
+<th>17</th>
+<td>1001</td>
+<td>Caova</td>
+<td>50380</td>
+</tr>
+<tr>
+<th>18</th>
+<td>2809</td>
+<td>Ceiba</td>
+<td>6262</td>
+</tr>
+<tr>
+<th>19</th>
+<td>248</td>
+<td>Caucho</td>
+<td>56407</td>
+</tr>
+<tr>
+<th>20</th>
+<td>124</td>
+<td>Caova</td>
+<td>86058</td>
+</tr>
+<tr>
+<th>21</th>
+<td>1639</td>
+<td>Laurel</td>
+<td>75321</td>
+</tr>
+<tr>
+<th>22</th>
+<td>2817</td>
+<td>Laurel</td>
+<td>24023</td>
+</tr>
+<tr>
+<th>23</th>
+<td>2823</td>
+<td>Caucho</td>
+<td>4594</td>
+</tr>
+<tr>
+<th>24</th>
+<td>1299</td>
+<td>Guayaca</td>
+<td>16028</td>
+</tr>
+<tr>
+<th>25</th>
+<td>1904</td>
+<td>Quina</td>
+<td>81359</td>
+</tr>
+<tr>
+<th>26</th>
+<td>1385</td>
+<td>Guayaca</td>
+<td>28026</td>
+</tr>
+<tr>
+<th>27</th>
+<td>879</td>
+<td>Quina</td>
+<td>58609</td>
+</tr>
+<tr>
+<th>28</th>
+<td>1276</td>
+<td>Caucho</td>
+<td>90975</td>
+</tr>
+<tr>
+<th>29</th>
+<td>673</td>
+<td>Quina</td>
+<td>59663</td>
+</tr>
+<tr>
+<th>30</th>
+<td>1358</td>
+<td>Ceiba</td>
+<td>80893</td>
+</tr>
+<tr>
+<th>31</th>
+<td>190</td>
+<td>Guayaca</td>
+<td>95327</td>
+</tr>
+<tr>
+<th>32</th>
+<td>341</td>
+<td>Laurel</td>
+<td>83996</td>
+</tr>
+<tr>
+<th>33</th>
+<td>1303</td>
+<td>Laurel</td>
+<td>13701</td>
+</tr>
+<tr>
+<th>34</th>
+<td>215</td>
+<td>Caova</td>
+<td>84086</td>
+</tr>
+<tr>
+<th>35</th>
+<td>2575</td>
+<td>Caucho</td>
+<td>57912</td>
+</tr>
+<tr>
+<th>36</th>
+<td>2009</td>
+<td>Ceiba</td>
+<td>83688</td>
+</tr>
+<tr>
+<th>37</th>
+<td>1187</td>
+<td>Caova</td>
+<td>82095</td>
+</tr>
+<tr>
+<th>38</th>
+<td>2723</td>
+<td>Quina</td>
+<td>99783</td>
+</tr>
+<tr>
+<th>39</th>
+<td>1338</td>
+<td>Laurel</td>
+<td>51566</td>
+</tr>
+<tr>
+<th>40</th>
+<td>73</td>
+<td>Laurel</td>
+<td>95247</td>
+</tr>
+<tr>
+<th>41</th>
+<td>1990</td>
+<td>Laurel</td>
+<td>83444</td>
+</tr>
+<tr>
+<th>42</th>
+<td>1749</td>
+<td>Caucho</td>
+<td>94011</td>
+</tr>
+<tr>
+<th>43</th>
+<td>1837</td>
+<td>Guayaca</td>
+<td>59097</td>
+</tr>
+<tr>
+<th>44</th>
+<td>235</td>
+<td>Ceiba</td>
+<td>93856</td>
+</tr>
+<tr>
+<th>45</th>
+<td>2989</td>
+<td>Caucho</td>
+<td>30978</td>
+</tr>
+<tr>
+<th>46</th>
+<td>34</td>
+<td>Quina</td>
+<td>25001</td>
+</tr>
+<tr>
+<th>47</th>
+<td>1895</td>
+<td>Laurel</td>
+<td>9314</td>
+</tr>
+<tr>
+<th>48</th>
+<td>1330</td>
+<td>Caucho</td>
+<td>44032</td>
+</tr>
+<tr>
+<th>49</th>
+<td>1409</td>
+<td>Laurel</td>
+<td>74380</td>
+</tr>
+</tbody>
+</table>
+ 
+
+             		</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+ 
+
+             		<!-- jQuery -->
+		<script src="assets/js/jquery-3.6.0.min.js"></script>
+
+		<!-- Feather Icon JS -->
+		<script src="assets/js/feather.min.js"></script>
+
+		<!-- Slimscroll JS -->
+		<script src="assets/js/jquery.slimscroll.min.js"></script>
+
+		<!-- Datatable JS -->
+		<script src="assets/js/jquery.dataTables.min.js"></script>
+		<script src="assets/js/dataTables.bootstrap4.min.js"></script>
+		
+		<!-- Bootstrap Core JS -->
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Chart JS -->
+		<script src="assets/plugins/apexchart/apexcharts.min.js"></script>
+		<script src="assets/plugins/apexchart/chart-data.js"></script>
+		
+		<!-- Custom JS -->
+		<script src="assets/js/script.js"></script>
+		
+  
+        
+</body>
+</html>
+  
+        
